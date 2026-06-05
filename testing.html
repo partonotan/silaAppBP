@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <input type="text" id="angka1" placeholder="Masukkan Angka Pertama">
+    <input type="text" id="angka2" placeholder="Masukkan Angka Kedua">
+    <button onclick="Hitung()">Kirim</button>
+
+    <!-- Hello, Nama. WELCOME! -->
+    <div id="output"></div>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <div id="output3"></div>
+    <div id="output4"></div>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        function Hitung() {
+            let angka1 = document.getElementById("angka1").value;
+            let angka2 = document.getElementById("angka2").value;
+            // let nama = inputan.value;
+            let kurang = Number(angka1 - angka2)
+            let kali = Number(angka1 * angka2)
+            let tambah = Number(angka1 + angka2)
+            let bagi = Number(angka1 / angka2)
+
+            let hasil = document.getElementById('output').innerHTML = "Hasil Perhitungan\n" 
+            let hasilx = document.getElementById('output1').innerHTML = angka1 + " - " + angka2 + ' = ' + kurang
+            let hasil2 = document.getElementById('output2').innerHTML = angka1 + " * " + angka2 + ' = ' + kali
+            let hasil3 = document.getElementById('output3').innerHTML = angka1 + " + " + angka2 + ' = ' + tambah 
+            let hasil4 = document.getElementById('output4').innerHTML = angka1 + " / " + angka2 + ' = ' + bagi
+        }
+        //Contoh 1
+        // let name = prompt("Masukkan Nama Anda: ")
+
+        // alert("Hello " + name + ", WELCOME!")
+
+        // Contoh 2
+        // let angka1 = Number(prompt("Masukkan Angka 1:"))
+        // let angka2 = Number(prompt("Masukkan Angka 2:"))
+        // let hasil = angka1 + angka2
+
+        // alert("Hasil dari " + angka1 + " + " + angka2 + " = " + hasil)
+
+        // Contoh 3
+        // let bil = Number(prompt("Masukkan Sebuah Angka: "))
+        // if (bil %2 == 0){
+        //     alert(bil + " adalah bilangan genap")
+        // }
+        // else{
+        //     alert(bil + " adalah bilangan ganjil")
+        // }
+
+
+    </script>
+</body>
+
+</html>

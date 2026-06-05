@@ -40,15 +40,14 @@
                 <p class="section-desc">Lengkapi form di bawah untuk mengajukan layanan akademik Anda.</p>
 
                 <!-- Form Pengajuan Layanan -->
-                <form action="#" method="post" target="_self" class="form-card">
+                <form action="#" onsubmit="return ValidasiForm()" class="form-card">
                     <fieldset>
                         <legend>Data Pengajuan</legend>
                         <!-- Field: Nama, NIM, Prodi, Layanan, Tanggal, Keterangan -->
                         <!-- Nama -->
                         <div class="form-group">
                             <label for="namalengkap">Nama Lengkap</label>
-                            <input type="text" id="namalengkap" name="namalengkap" placeholder="Masukkan Nama Anda.."
-                                required>
+                            <input type="text" id="namalengkap" name="namalengkap" placeholder="Masukkan Nama Anda..">
                         </div>
 
                         <!-- NIM dan Prodi -->
@@ -56,12 +55,12 @@
                             <!-- NIM -->
                             <div class="form-group">
                                 <label for="nim">NIM</label>
-                                <input type="text" id="nim" name="nim" placeholder="Contoh: 241120151" required>
+                                <input type="text" id="nim" name="nim" placeholder="Contoh: 241120151">
                             </div>
                             <!-- PRODI -->
                             <div class="form-group">
                                 <label for="prodi">Program Studi</label>
-                                <select id="prodi" name="prodi" required>
+                                <select id="prodi" name="prodi">
                                     <option value="">- Pilih Program Studi -</option>
                                     <option value="Sistem Informasi">Sistem Informasi</option>
                                     <option value="Teknik Informatika">Teknik Informatika</option>
@@ -76,7 +75,7 @@
                             <!-- Layanan -->
                             <div class="form-group">
                                 <label for="layanan">Jenis Layanan</label>
-                                <select id="layanan" name="layanan" required>
+                                <select id="layanan" name="layanan">
                                     <option value="">- Pilih Jenis Layanan -</option>
                                     <option value="SKA">SKA - Surat Aktif Kuliah</option>
                                     <option value="CAK">CAK - Cuti Akademik</option>
@@ -87,19 +86,21 @@
                             <!-- Tanggal -->
                             <div class="form-group">
                                 <label for="tanggal">Tanggal Pengajuan</label>
-                                <input type="date" id="tanggal" name="tanggal" required>
+                                <input type="date" id="tanggal" name="tanggal">
                             </div>
                         </div>
 
                         <!-- Keterangan -->
                         <div class="form-group">
                             <label for="keterangan">Keterangan (opsional)</label>
-                            <textarea id="keterangan" name="keterangan" rows="4" placeholder="Jelaskan alasan Pengajuan anda..."></textarea>
+                            <textarea id="keterangan" name="keterangan" rows="4"
+                                placeholder="Jelaskan alasan Pengajuan anda..."></textarea>
                         </div>
 
                         <!-- Tombol Kirim & Reset -->
                         <div class="form-actions">
-                            <input type="submit" name="submit" value="🚀Ajukan Sekarang" class="btn btn-primary">
+                            <input type="submit" name="submit" value="🚀Ajukan Sekarang"
+                                class="btn btn-primary">
                             <button type="reset" name="reset" class="btn btn-outline">🔁Reset</button>
                         </div>
 
@@ -132,7 +133,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
